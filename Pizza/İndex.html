@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: SEGOE 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+header{
+    padding: 15px 70px;
+    display: inline-block;
+    width: 100%;
+
+}
+.logo{
+    float: left;
+    height: 300px;
+}
+.logo img{
+    height: 150px;
+    width: 150px;
+}
+
+.menu{
+    float: right;
+    margin-top: 20px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    
+}
+ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffb300;
+    font-weight: 700;
+    padding: 10px;
+}
+.sol{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding: 0 0 0 80px;
+}
+.sol img{
+    margin-top: -100px;
+    width: 600px;
+    height: 600px;
+}
+.sag{
+    width: 50%;
+    float: right;
+    padding: 100px 50px;
+}
+.sag h1{
+    margin-top:-100px;
+    font-size: 72px;
+    font-weight: 500;
+}
+.sag p{
+    padding: 15px 0;
+    font-size: 16px;
+}
+.sag a{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ffb300;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 50px;
+    box-shadow: 0 0 24px rgba(0,0,0,0.16);
+}
+.square{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    background-color: #ffb300;
+    z-index: -1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="ana">
+        <header>
+            <div class="logo">
+                <img src="Resimler/logo.png" alt="">
+            </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">AnaSayfa</a></li>
+                        <li><a href="#">Menü</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Kayıt</a></li>
+                    </ul>
+                </div>
+            
+        </header>
+        <div class="content">
+            <div class="sol">
+                <img class = "js-tilt" src="Resimler/pizza.png">
+            </div>
+            <div class="sag">
+                <h1>Kerem Pizza Salonu</h1>
+                <p>Hayatının en mutlu günlerini, en unutulmaz anlarını, en mükemmel şekilde yaşamak isteyenler için dizayn
+                edilmiş Serdivan, 2008 yılından bu yana sektöründe yeniliklere öncülük etmiş, kaliteden ödün vermeden,
+                müşteri memnuyetini kendine misyon edinmiş olup, 700 kişilik kapalı alan kapasitesi ve 4000 kişilik
+                açık alan kapasitesi ve şık tasarımıyla misafirlerine büyüleyici bir atmosfer sunmaktadır</p>
+                <a class="js-tilt" href="#">Sipariş Ver</a>
+            </div>
+        </div>
+        <div class="square"></div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script> type="text/javascript"
+    $('.js-tilt').tilt({
+    glare: true,
+    maxGlare: .5,
+    scale: 1.1
+    })
+    
+</script>
+</body>
+</html>

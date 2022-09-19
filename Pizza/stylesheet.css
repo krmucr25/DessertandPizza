@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: SEGOE 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+header{
+    padding: 15px 70px;
+    display: inline-block;
+    width: 100%;
+
+}
+.logo{
+    float: left;
+}
+.menu{
+    float: right;
+}
